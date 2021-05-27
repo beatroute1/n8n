@@ -15,9 +15,9 @@
 			<el-menu default-active="workflow" @select="handleSelect" :collapse="isCollapsed">
 
 				<el-menu-item index="logo" class="logo-item">
-					<a href="https://n8n.io" target="_blank" class="logo">
-						<img :src="basePath + 'n8n-icon-small.png'" class="icon" alt="n8n.io"/>
-						<span class="logo-text" slot="title">n8n.io</span>
+					<a href="https://app.beatroute.io" target="_blank" class="logo">
+						<img :src="basePath + 'n8n-icon-small.png'" class="icon" alt="BeatRoute"/>
+						<span class="logo-text" slot="title">BeatRoute</span>
 					</a>
 				</el-menu-item>
 
@@ -123,13 +123,6 @@
 					</template>
 
 					<MenuItemsIterator :items="helpMenuItems" />
-
-					<el-menu-item index="help-about">
-						<template slot="title">
-							<font-awesome-icon class="about-icon" icon="info"/>
-							<span slot="title" class="item-title">About n8n</span>
-						</template>
-					</el-menu-item>
 				</el-submenu>
 
 				<MenuItemsIterator :items="sidebarMenuBottomItems" :root="true"/>
@@ -177,29 +170,9 @@ const helpMenuItems: IMenuItem[] = [
 		id: 'docs',
 		type: 'link',
 		properties: {
-			href: 'https://docs.n8n.io',
+			href: 'https://docs.beatroute.io',
 			title: 'Documentation',
 			icon: 'book',
-			newWindow: true,
-		},
-	},
-	{
-		id: 'forum',
-		type: 'link',
-		properties: {
-			href: 'https://community.n8n.io',
-			title: 'Forum',
-			icon: 'users',
-			newWindow: true,
-		},
-	},
-	{
-		id: 'examples',
-		type: 'link',
-		properties: {
-			href: 'https://n8n.io/workflows',
-			title: 'Workflows',
-			icon: 'network-wired',
 			newWindow: true,
 		},
 	},
