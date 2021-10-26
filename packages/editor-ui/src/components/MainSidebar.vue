@@ -10,7 +10,7 @@
 			</div>
 			<n8n-menu default-active="workflow" @select="handleSelect" :collapse="isCollapsed">
 
-				<el-menu-item index="logo" class="logo-item">
+				<n8n-menu-item index="logo" class="logo-item">
 					<a href="https://app.beatroute.io" target="_blank" class="logo">
 						<img :src="basePath + 'n8n-icon-small.png'" class="icon" alt="BeatRoute"/>
 						<span class="logo-text" slot="title">BeatRoute</span>
